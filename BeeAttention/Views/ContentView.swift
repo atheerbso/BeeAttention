@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  BeeAttention
+//  mindfitness
 //
-//  Created by Atheer on 11/07/1445 AH.
+//  Created by Haneen Rida Shagroon on 04/07/1445 AH.
 //
 
 import SwiftUI

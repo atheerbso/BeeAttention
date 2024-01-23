@@ -1,18 +1,18 @@
 //
-//  SwiftUIView1.swift
-//  BeeAttention
+//  LevelViewModel.swift
+//  mindfitness
 //
-//  Created by Shahad Alhothali on 11/07/1445 AH.
+//  Created by Haneen Rida Shagroon on 05/07/1445 AH.
 //
 
 import SwiftUI
 
-struct SwiftUIView1: View {
+struct LevelViewModel: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    SwiftUIView1()
+    LevelViewModel()
 }
