@@ -19,15 +19,22 @@ struct SplashView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: 220, height: 220)
+                    .opacity(isActive ? 0 : 1)
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                    self.isActive = true
-                }
-            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            withAnimation {
+            self.isActive = true
+               }
+              }
+             }
+            .transition(.slide)
         }
+      
     }
+        
 }
+
 #Preview {
     SplashView()
 }

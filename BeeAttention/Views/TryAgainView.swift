@@ -19,7 +19,7 @@ struct TryAgainView: View {
                 .frame(width: 320, height: 480)
                 .background(Color(red: 1, green: 0.97, blue: 0.86))
                 .cornerRadius(15)
-                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+//                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
                 VStack{
                     Text("Give it one more try.")
                         .font(.system(size: 36))
@@ -49,14 +49,13 @@ struct TryAgainView: View {
                     ZStack{
                         Text("Try Again")
                             .font(
-                                Font.custom("SF Pro", size: 40)
+                                Font.custom("SF Pro", size: 24)
                                     .weight(.bold))
                             .foregroundColor(.black)
-                            .frame(width: 315, height: 80)
+                            .frame(width: 300, height: 70)
                             .background(Color(red: 0.99, green: 0.78, blue: 0))
-                            .cornerRadius(15)
-                            .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 4)
-                        
+                            .cornerRadius(16)
+                            .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 4)
                     }
                 }
             }

@@ -10,6 +10,15 @@
 		1E18F9792B5FB2CA000D1B60 /* BeeAttentionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E18F9782B5FB2CA000D1B60 /* BeeAttentionApp.swift */; };
 		1E18F97D2B5FB2CB000D1B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E18F97C2B5FB2CB000D1B60 /* Assets.xcassets */; };
 		1E18F9802B5FB2CB000D1B60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E18F97F2B5FB2CB000D1B60 /* Preview Assets.xcassets */; };
+		6B49A1192B664B8900D9F2B5 /* lettersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A1182B664B8900D9F2B5 /* lettersModel.swift */; };
+		6B49A11B2B664BC100D9F2B5 /* lettersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A11A2B664BC100D9F2B5 /* lettersViewModel.swift */; };
+		6B49A11D2B664C0600D9F2B5 /* lettersDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A11C2B664C0600D9F2B5 /* lettersDictionary.swift */; };
+		6B49A1212B664F0B00D9F2B5 /* LettersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A1202B664F0B00D9F2B5 /* LettersView.swift */; };
+		6B49A1272B69596F00D9F2B5 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A1262B69596F00D9F2B5 /* TimerModel.swift */; };
+		6B49A1292B6959B300D9F2B5 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A1282B6959B300D9F2B5 /* TimerViewModel.swift */; };
+		6B49A12B2B695A8200D9F2B5 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A12A2B695A8200D9F2B5 /* TimerView.swift */; };
+		6B49A12D2B69655100D9F2B5 /* CustomLinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A12C2B69655100D9F2B5 /* CustomLinearProgressBar.swift */; };
+		6B49A12F2B6A18B300D9F2B5 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B49A12E2B6A18B300D9F2B5 /* SessionView.swift */; };
 		7718A14A2B5FBD2700DD816D /* View in Resources */ = {isa = PBXBuildFile; fileRef = 7718A1492B5FBD2700DD816D /* View */; };
 		7718A14F2B5FBD9400DD816D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7718A14E2B5FBD9400DD816D /* GameModel.swift */; };
 		7718A1512B5FBDB400DD816D /* LevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7718A1502B5FBDB400DD816D /* LevelModel.swift */; };
@@ -38,6 +47,15 @@
 		1E18F9782B5FB2CA000D1B60 /* BeeAttentionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeAttentionApp.swift; sourceTree = "<group>"; };
 		1E18F97C2B5FB2CB000D1B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E18F97F2B5FB2CB000D1B60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B49A1182B664B8900D9F2B5 /* lettersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lettersModel.swift; sourceTree = "<group>"; };
+		6B49A11A2B664BC100D9F2B5 /* lettersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lettersViewModel.swift; sourceTree = "<group>"; };
+		6B49A11C2B664C0600D9F2B5 /* lettersDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lettersDictionary.swift; sourceTree = "<group>"; };
+		6B49A1202B664F0B00D9F2B5 /* LettersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersView.swift; sourceTree = "<group>"; };
+		6B49A1262B69596F00D9F2B5 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		6B49A1282B6959B300D9F2B5 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		6B49A12A2B695A8200D9F2B5 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		6B49A12C2B69655100D9F2B5 /* CustomLinearProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLinearProgressBar.swift; sourceTree = "<group>"; };
+		6B49A12E2B6A18B300D9F2B5 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		7718A1492B5FBD2700DD816D /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; name = View; path = ../../../mindfitness/mindfitness/View; sourceTree = "<group>"; };
 		7718A14E2B5FBD9400DD816D /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		7718A1502B5FBDB400DD816D /* LevelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelModel.swift; sourceTree = "<group>"; };
@@ -125,6 +143,10 @@
 				7718A16E2B5FC70100DD816D /* NewLevelUnlockedView.swift */,
 				7718A1722B5FC73A00DD816D /* TryAgainView.swift */,
 				7718A16A2B5FC2CA00DD816D /* CountdownView.swift */,
+				6B49A1202B664F0B00D9F2B5 /* LettersView.swift */,
+				6B49A12A2B695A8200D9F2B5 /* TimerView.swift */,
+				6B49A12C2B69655100D9F2B5 /* CustomLinearProgressBar.swift */,
+				6B49A12E2B6A18B300D9F2B5 /* SessionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +158,8 @@
 				7718A1642B5FBFFF00DD816D /* LevelViewModel.swift */,
 				7718A1662B5FC01800DD816D /* SessionViewModel.swift */,
 				7718A1682B5FC1D500DD816D /* CountdownViewModel.swift */,
+				6B49A11A2B664BC100D9F2B5 /* lettersViewModel.swift */,
+				6B49A1282B6959B300D9F2B5 /* TimerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -147,6 +171,9 @@
 				7718A1502B5FBDB400DD816D /* LevelModel.swift */,
 				7718A1522B5FBDD100DD816D /* SessionlModel.swift */,
 				7718A1542B5FBE1600DD816D /* WordModel.swift */,
+				6B49A1182B664B8900D9F2B5 /* lettersModel.swift */,
+				6B49A11C2B664C0600D9F2B5 /* lettersDictionary.swift */,
+				6B49A1262B69596F00D9F2B5 /* TimerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,10 +250,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7718A1732B5FC73A00DD816D /* TryAgainView.swift in Sources */,
+				6B49A12F2B6A18B300D9F2B5 /* SessionView.swift in Sources */,
+				6B49A1192B664B8900D9F2B5 /* lettersModel.swift in Sources */,
 				7718A1652B5FBFFF00DD816D /* LevelViewModel.swift in Sources */,
 				7718A1512B5FBDB400DD816D /* LevelModel.swift in Sources */,
 				7718A16B2B5FC2CA00DD816D /* CountdownView.swift in Sources */,
 				7718A1692B5FC1D500DD816D /* CountdownViewModel.swift in Sources */,
+				6B49A1212B664F0B00D9F2B5 /* LettersView.swift in Sources */,
+				6B49A12D2B69655100D9F2B5 /* CustomLinearProgressBar.swift in Sources */,
 				7718A1532B5FBDD100DD816D /* SessionlModel.swift in Sources */,
 				7718A1752B5FC76300DD816D /* WelcomView.swift in Sources */,
 				7718A15F2B5FBEFE00DD816D /* Game3Levels.swift in Sources */,
@@ -234,11 +265,16 @@
 				7718A1712B5FC72100DD816D /* SplashView.swift in Sources */,
 				7718A1632B5FBF9300DD816D /* GameViewModel.swift in Sources */,
 				7718A16D2B5FC6DD00DD816D /* HowToPlayView.swift in Sources */,
+				6B49A12B2B695A8200D9F2B5 /* TimerView.swift in Sources */,
+				6B49A11B2B664BC100D9F2B5 /* lettersViewModel.swift in Sources */,
 				7718A14F2B5FBD9400DD816D /* GameModel.swift in Sources */,
 				7718A15D2B5FBEE600DD816D /* Game2Levels.swift in Sources */,
 				1E18F9792B5FB2CA000D1B60 /* BeeAttentionApp.swift in Sources */,
 				7718A1592B5FBEC000DD816D /* ContentView.swift in Sources */,
+				6B49A1292B6959B300D9F2B5 /* TimerViewModel.swift in Sources */,
+				6B49A1272B69596F00D9F2B5 /* TimerModel.swift in Sources */,
 				7718A16F2B5FC70100DD816D /* NewLevelUnlockedView.swift in Sources */,
+				6B49A11D2B664C0600D9F2B5 /* lettersDictionary.swift in Sources */,
 				7718A1552B5FBE1600DD816D /* WordModel.swift in Sources */,
 				7718A1612B5FBF1C00DD816D /* Game4Levels.swift in Sources */,
 				7718A1572B5FBEA700DD816D /* GameView.swift in Sources */,

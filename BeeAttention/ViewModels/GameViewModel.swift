@@ -17,13 +17,13 @@ class GameViewModel: ObservableObject {
        
     games = [
         
-        GameModel(id: 1, name: "Letters to a word", type: "Attention", image: "image1", isLocked: false, destinationView: { AnyView(GameLevels()) }),
+        GameModel(id: 1, name: "Letters to a word", type: "Attention", image: "Brain4", isLocked: false, destinationView: { AnyView(HowToPlayView()) }),
          
-        GameModel(id: 2, name: "Puzzle", type: "Memory", image: "image2", isLocked: true, destinationView:{ AnyView(Game2Levels()) }),
+        GameModel(id: 2, name: "Puzzle", type: "Memory", image: "Brain5", isLocked: true, destinationView:{ AnyView(Game2Levels()) }),
         
-        GameModel(id: 3, name: "Puzzle", type: "Problem Solving", image: "image3", isLocked: true, destinationView: { AnyView(Game3Levels()) }),
+        GameModel(id: 3, name: "Puzzle", type: "Problem Solving", image: "Brain6", isLocked: true, destinationView: { AnyView(Game3Levels()) }),
         
-        GameModel(id: 4, name: "Puzzle", type: "Strategy", image: "image4", isLocked: true, destinationView: { AnyView(Game4Levels()) }),
+        GameModel(id: 4, name: "Puzzle", type: "Strategy", image: "Brain7", isLocked: true, destinationView: { AnyView(Game4Levels()) }),
                  // Add more games as needed
         
             ]

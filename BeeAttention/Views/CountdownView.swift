@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct CountdownView: View {
+    private(set) var model = TimerModel()
+
     @StateObject private var viewModel = CountdownViewModel()
     @State private var answer: String = ""
-
+    
+   
     var body: some View {
         ZStack{
             VStack{
+             
+            
+                
                 Rectangle()
                     .foregroundColor(.clear)
                     .frame(width: 363, height: 542)
@@ -23,9 +29,9 @@ struct CountdownView: View {
                     .frame(width: 330, height: 500)
                     .background(Color(red: 0.99, green: 0.78, blue: 0))
                     .cornerRadius(15)
-                    .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 4)
+//                    .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 4)
                 
-                TextField("   Enter your Answer", text: $answer)
+                TextField("Enter your Answer", text: $answer)
                     .multilineTextAlignment(.leading)
                   .foregroundColor(.clear)
                   .frame(width: 364, height: 50)
@@ -56,7 +62,7 @@ struct CountdownView: View {
                 Image("Rectangle 24")
                     .frame(width: 431, height: 931)
                     .background(.black.opacity(0.44))
-                    .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+//                    .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
             }
         }
     }

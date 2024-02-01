@@ -74,16 +74,16 @@ struct GameView: View {
         NavigationView {
             VStack (alignment: .leading) {
                 Text("Train your mind")
-                    .font(Font.custom("SF Pro", size: 40))
+                    .font(Font.custom("SF Pro", size: 34))
                     .foregroundColor(.black)
-                    .padding([.leading, .trailing], 15)
-
+                    .padding([.leading, .trailing], 10)
+                    .offset(y: 42)
                 Rectangle()
                     .foregroundColor(.clear)
-                    .frame(width: 297.00168, height: 1)
+                    .frame(width: 280.00168, height: 1)
                     .background(Color(red: 0.99, green: 0.78, blue: 0))
                     .padding(.bottom, 10)
-
+                    .offset(y:36)
                 ScrollView {
                     creatGameView()
                 }
@@ -91,9 +91,19 @@ struct GameView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+            Image("Wallpaper") // Replace with your image name
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
 //            .navigationTitle("Games")
+                       )
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("", displayMode: .inline)
+       
     }
+        
 
     func creatGameView() -> some View {
         LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 0) {
@@ -106,7 +116,7 @@ struct GameView: View {
                                 .frame(width: 170, height: 140)
                                 .background(Color(red: 1, green: 0.97, blue: 0.86))
                                 .cornerRadius(15)
-                                .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+                                .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 4)
                                
                             AnyView(
                                 
@@ -118,8 +128,6 @@ struct GameView: View {
 //                                .applyGrayscale(game.isLocked)
                             )
                         }
-                        
-                       
                        
                         Text(game.name)
                           .font(Font.custom("SF Pro", size: 20))
@@ -141,6 +149,7 @@ struct GameView: View {
         .padding([.leading, .trailing], 10)
         .padding(.top, 40)
     }
+    
 }
 
 

@@ -13,46 +13,54 @@ struct WelcomView: View {
     var body: some View {
         NavigationView {
             
-            VStack(alignment: .center) {
+            VStack  {
                 
-                Text("WELCOME TO")
-                    .font(Font.custom("SF Pro", size: 24))
-                    .foregroundColor(.black)
-                
+//                Text("WELCOME TO")
+//                    .font(Font.custom("SF Pro", size: 24))
+//                    .foregroundColor(.black)
+//                
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
 //                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 549, height: 352)
-                    .clipped()
+                    .frame(width: 500, height: 352)
+                    .padding(.trailing, 40)
+//                    .clipped()
+                    
                 
-                Text("“You don’t use it, you lose it.”\nFocusing on building your mental fitness improves concentration, focus, memory, and mental agility at any age.")
-                    .font(Font.custom("SF Pro", size: 18))
+                Text("You don't use it, you lose it 🧠!\n \n exercise your mind daily to increase your attention, memory, and all your mental skills.")
+                    .font(Font.custom("SF Pro", size: 20))
                     .multilineTextAlignment(.center)
-                    .foregroundColor(.black)
-                    .frame(width: 372, height: 97, alignment: .top)
+                    .foregroundColor(Color.black.opacity(0.8))
+                    .lineSpacing(2)
+                    .frame(width: 360, height: 140, alignment: .top)
                     .padding()
+                    .offset(y: -30)
+                
+                
                
                 Button(action: {
                     primaryButtonTapped = true
                 }) {
                     NavigationLink(destination: GameView()) {
                         ZStack{
-                            Text("START")
+                            Text("Let's get started")
                                 .font(
-                                    Font.custom("SF Pro", size: 40)
+                                    Font.custom("SF Pro", size: 24)
                                         .weight(.bold))
                                 .foregroundColor(.black)
-                                .frame(width: 315, height: 80)
+                                .frame(width: 300, height: 70)
                                 .background(Color(red: 0.99, green: 0.78, blue: 0))
-                                .cornerRadius(15)
-                                .shadow(color: .black.opacity(0.3), radius: 2, x: 0, y: 4)
-                            
+                                .cornerRadius(16)
+                                .shadow(color: .black.opacity(0.1), radius: 2, x: 0, y: 4)
+//                            
                         }
                     }
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("", displayMode: .inline)
     }
 }
 #Preview {

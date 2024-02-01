@@ -7,51 +7,40 @@
 
 import Foundation
 
-//class SessionModel: ObservableObject {
-//    var totalwords: [String]
-//    var movingLetters: [Character]
-//    @Published var score: Int
-//    @Published var currentIndex: Int
-//    let interval: TimeInterval
-//    var voiceFeedback: String
-//    var guessedWord: Bool
-//    var correctGussedword:Int
-//    var currentWord: String
-//    var hints: [String]
-//    // Other properties and methods related to the session
-//
-//    init(totalwords: [String], movingLetters: [Character], score: Int, currentIndex: Int, interval: TimeInterval, voiceFeedback: String, guessedWord: Bool, correctGussedword: Int, currentWord: String, hints: [String]) {
-//        self.totalwords = totalwords
-//        self.movingLetters = movingLetters
-//        self.score = score
-//        self.currentIndex = currentIndex
-//        self.interval = interval
-//        self.voiceFeedback = voiceFeedback
-//        self.guessedWord = guessedWord
-//        self.correctGussedword = correctGussedword
-//        self.currentWord = currentWord
-//        self.hints = hints
-//    }
-//}
-
-
+import Foundation
 
 class SessionModel: ObservableObject {
-    var words: [String]
-    var letters: [Character]
+    var totalwords: Int // STring?
+//    var movingLetters: [Character]
     @Published var score: Int
     @Published var currentIndex: Int
     let interval: TimeInterval
+    var voiceFeedback: String
+    var guessedWord: Bool
+    var correctGussedword:Int
+    var currentWord: String
     var hints: [String]
-    var sounds: [String]
+    // Other properties and methods related to the session
 
-    init(words: [String], letters: [Character], score: Int, currentIndex: Int, interval: TimeInterval, hints: [String], sounds: [String]) {
-        self.words = words
-        self.letters = letters
+    init(totalwords: Int/*, movingLetters: [Character]*/, score: Int, currentIndex: Int, interval: TimeInterval, voiceFeedback: String, guessedWord: Bool, correctGussedword: Int, currentWord: String, hints: [String]) {
+        self.totalwords = totalwords
+//        self.movingLetters = movingLetters
         self.score = score
         self.currentIndex = currentIndex
         self.interval = interval
+        self.voiceFeedback = voiceFeedback
+        self.guessedWord = guessedWord
+        self.correctGussedword = correctGussedword
+        self.currentWord = currentWord
         self.hints = hints
-        self.sounds = sounds
+    }
+    
+    func CalculateScore(){
+      
+        //want to edit !
+        if totalwords == correctGussedword{
+            score+=10
+        }
+            
     }
 }

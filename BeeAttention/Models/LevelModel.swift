@@ -7,24 +7,35 @@
 
 import Foundation
 
-class LevelModel: ObservableObject {
-    let id: Int
+class LevelModel: ObservableObject , Identifiable{
+    
+    let id: UUID
     let name: String
-    @Published var sessions: [SessionModel]
-
-    init(id: Int, name: String, sessions: [SessionModel]) {
-        self.id = id
-        self.name = name
-        self.sessions = sessions
-    }
-}
-
-   /* @Published var isUnlocked: Bool*/ // Assuming status is a string, you can adjust the type as needed
+    let index: Int
+    let time:  Int //TimeInterval
+    let scoreImg : String
+    let timeImg : String
+    let checkImg : String
+    let lockImg : String
+    let sessions:SessionModel
+    @Published var isUnlocked: Bool // Assuming status is a string, you can adjust the type as needed
+    
     // Other properties and methods related to the level
 
-
-//        self.isUnlocked = isUnlocked
-   
+    init(id: UUID, name: String, index: Int, time: Int, sessions: SessionModel, isUnlocked: Bool , scoreImg : String , timeImg : String , checkImg : String , lockImg : String ) {
+        self.id = id
+        self.name = name
+        self.index = index
+        self.time = time
+        self.sessions = sessions
+        self.isUnlocked = isUnlocked
+        self.lockImg = lockImg
+        self.checkImg = checkImg
+        self.scoreImg = scoreImg
+        self.timeImg = timeImg
+        
+    }
+}
 
 
 
@@ -42,3 +53,5 @@ func updateScore() {
 func updateTime() {
     // Logic to update the time
 }
+
+
